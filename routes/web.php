@@ -13,6 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Routes static pages
+Route::get('/', 'StaticPageController@index')->name('static-page.home'); //grazie al metodo name do un nome alle rotte in modo tale da poter creare facilmente link a queste rotte
+Route::get('/privacy', 'StaticPageController@privacy')->name('static-page.privacy');
+Route::get('/faq', 'StaticPageController@faq')->name('static-page.faq');
+
+//Routes students
+Route::get('/students', 'StudentController@index')->name('students.index');
+Route::get('/students/show/{{id}}', 'StudentController@show')->name('students.show');
