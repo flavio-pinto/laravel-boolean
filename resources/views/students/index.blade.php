@@ -5,7 +5,7 @@
         <h2 class="ex-students__title">I nostri ex studenti su LinkedIn</h2>
         <div class="ex-students__cards">
             @foreach($students as $student)
-                <a href="{{route('students.show', ['id' => $student['id']])}}" class="ex-students__cards__item">
+                <a href="{{route('students.show', ['slug' => $student['slug']])}}" class="ex-students__cards__item">
                     <header class="ex-students__cards__item__header">
                         <img src="{{$student['img']}}" alt="{{$student['nome']}}" class="ex-students__cards__item__header__face">
                         <div class="ex-students__cards__item__header__info">

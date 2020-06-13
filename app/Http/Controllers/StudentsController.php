@@ -18,8 +18,8 @@ class StudentsController extends Controller {
     }
 
     //Detail student page
-    public function show($id) {
-        $student = $this->searchStudent($id, $this->students);
+    public function show($slug) {
+        $student = $this->searchStudent($slug, $this->students);
         if($student == false) {
             abort(404);
         }
@@ -29,9 +29,9 @@ class StudentsController extends Controller {
 
     //Utilities
     //Check if student exist by id
-    private function searchStudent($id, $array) {
+    private function searchStudent($slug, $array) {
         foreach($array as $student) {
-            if($student['id'] == $id) {
+            if($student['slug'] == $slug) {
                 return $student;
             }
         }
