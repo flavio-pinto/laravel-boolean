@@ -6,15 +6,21 @@ use Illuminate\Http\Request;
 
 class StudentsController extends Controller {
     private $students;
+    private $genders;
 
     public function __construct() {
-        $this->students = config('students');
+        $this->students = config('students.students'); //nome del file che sta in config e key dell'array che ci serve
+        $this->genders = config('students.genders');
     }
 
     //Students page
     public function index() {
-        $students = $this->students;
-        return view('students.index', compact('students'));
+        $infos = [
+            'students' => $this->students,
+            'genders' => $this->genders
+        ];
+        
+        return view('students.index', $infos);
     }
 
     //Detail student page

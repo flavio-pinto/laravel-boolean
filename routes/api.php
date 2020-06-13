@@ -14,6 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+// Route::middleware('auth:api')->get('/user', function (Request $request) {
+//     return $request->user();
+// });
+
+Route::namespace('Api')->group(function() { //grazie a namespace e group facciamo capire che questa route si trova nella cartella Controller/Api, mentre senza la localizzava nella cartella principale
+    Route::post('students/genders', 'StudentsController@gender');
 });

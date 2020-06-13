@@ -2,6 +2,18 @@
 
 @section('main-content')
     <section class="ex-students">
+        <div class="ex-students__filter">
+            <select name="filter" id="filter">
+                @foreach ($genders as $gender)
+                <option value="{{$gender}}">
+                    @if($gender == 'm') Uomo
+                    @elseif($gender == 'f') Donna
+                    @else All
+                    @endif
+                </option>
+                @endforeach
+            </select>
+        </div>
         <h2 class="ex-students__title">I nostri ex studenti su LinkedIn</h2>
         <div class="ex-students__cards">
             @foreach($students as $student)
