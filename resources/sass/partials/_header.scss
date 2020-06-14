@@ -1,0 +1,45 @@
+.header {
+    @include container(100%);
+    padding: 0 15px;
+    font-size: 14px;
+    color: $blue;
+    &__nav {
+        height: 90px;
+        @include flexbox();
+        &__brand {
+            height: 60px;
+            &__img {
+                height: 100%;
+            }
+        }
+        &__list {
+            @include flexbox();
+            height: 40px;
+            text-transform: uppercase;
+            &__item {
+                @include flexbox();
+                height: 100%;
+                padding: 0 20px;
+                margin: 0 5px;
+                border-bottom: 2px solid transparent;
+                transition: border 300ms;
+                &.active,
+                &:hover {
+                    border-bottom: 2px solid $green;
+                }
+                &:last-child {
+                    margin-left: 40px;
+                    border-radius: 5px;
+                    background: $green;
+                    height: 100%;
+                    font-size: 16px;
+                    color: $white;
+                }
+                &__link {
+                    align-self: center;
+                    padding: 8px;
+                }
+            }
+        }
+    }
+}
