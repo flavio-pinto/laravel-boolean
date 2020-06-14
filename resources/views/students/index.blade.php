@@ -37,4 +37,10 @@
             @endforeach
         </div>
     </section>
+
+    @include('shared.handlebars.student-template')
+@endsection
+
+@section('scripts')
+    <script src="{{asset('js/app.js')}}"></script>
 @endsection
