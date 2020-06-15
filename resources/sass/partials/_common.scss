@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Rubik', sans-serif;
+    font-weight: 400;
 }
 
 li {
@@ -31,6 +32,7 @@ $green: #61ce4e;
     flex-wrap: $flex-wrap;
 }
 
-@mixin container($width) {
+@mixin container($width: 1140px) {
     width: $width;
+    margin: 0 auto;
 }

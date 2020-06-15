@@ -1,0 +1,43 @@
+.main__jumbotron {
+    @include flexbox();
+    @include container();
+    padding: 80px 0;
+    color: $blue;
+    &__left,
+    &__right {
+        flex-basis: 50%;
+        &__img {
+            max-width: 90%;
+            text-align: center;
+        }
+    }
+    &__left {
+        &__title{
+            font-size: 59px;
+            font-weight: 300;
+            text-transform: uppercase;
+            margin-bottom: 48px;
+            & strong {
+                display: block;
+                font-weight: 400;
+            }
+        }
+        &__objective {
+            font-size: 22px;
+            font-weight: 400;
+        }
+        &__offer {
+            font-weight: 300;
+            &__item {
+                list-style: disc;
+                list-style-position: inside;
+                & strong {
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+    &__right {
+        text-align: center;
+    }
+}

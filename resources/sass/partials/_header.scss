@@ -1,5 +1,5 @@
 .header {
-    @include container(100%);
+    @include container($width: 100%);
     padding: 0 15px;
     font-size: 14px;
     color: $blue;

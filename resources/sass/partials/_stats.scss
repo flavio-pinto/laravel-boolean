@@ -1,0 +1,22 @@
+.stats {
+    padding: 40px 0;
+    background: $blue;
+    color: $white;
+    & .wrapper {
+        @include flexbox($align-items: 'flex-start');
+        @include container();
+        text-align: center;
+    }
+}
+
+.stats__box {
+    flex-basis: 280px;
+    text-align: center;
+    &__title {
+        font-size: 50px;
+    }
+    &__parag {
+        font-size: 19px;
+        font-weight: 300;
+    }
+}
