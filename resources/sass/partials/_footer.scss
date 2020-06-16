@@ -1,7 +1,7 @@
 .footer {
     background: $blue;
     color: $white;
-    padding: 70px 0 30px;
+    padding: 70px 0 40px;
     & .wrapper {
         @include container();
     }
@@ -33,4 +33,21 @@
 }
 
 
-
+.footer__bottom {
+    text-align: center;
+    &__social {
+        font-size: 35px;
+        &__link {
+            & i {
+                margin: 30px;
+                transition: 200ms;
+                &:hover {
+                    color: $green;
+                }
+            }
+        }
+    }
+    &__address {
+        font-size: 15px;
+    }
+}

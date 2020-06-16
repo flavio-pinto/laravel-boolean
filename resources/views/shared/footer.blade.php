@@ -17,7 +17,15 @@
             </ul>
         </nav>
         <div class="footer__bottom">
-    
+            <div class="footer__bottom__social">
+                <a class="footer__bottom__social__link" href="https://www.instagram.com/boolean.careers/"><i class="fab fa-instagram"></i></a>
+                <a class="footer__bottom__social__link" href="https://www.facebook.com/boolean.careers"><i class="fab fa-facebook-f"></i></a>
+                <a class="footer__bottom__social__link" href="https://www.linkedin.com/school/boolean-careers/"><i class="fab fa-linkedin-in"></i></a>
+                <a class="footer__bottom__social__link" href="https://www.youtube.com/channel/UCN0mktfmWySUg3OmvHKrdcQ"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="footer__bottom__address">
+                <span>Boolean SRL - Piazzale Giovanni dalle Bande Nere, 9 - 20146, Milano - P.IVA: 10214930967</span>
+            </div>
         </div>
     </div>
 </footer>

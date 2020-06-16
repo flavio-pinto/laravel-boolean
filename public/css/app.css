@@ -148,7 +148,7 @@ a {
 .footer {
   background: #1b3c59;
   color: #ffffff;
-  padding: 70px 0 30px;
+  padding: 70px 0 40px;
 }
 .footer .wrapper {
   width: 1140px;
@@ -177,4 +177,21 @@ a {
 }
 .footer__nav__list__item {
   margin-bottom: 5px;
+}
+
+.footer__bottom {
+  text-align: center;
+}
+.footer__bottom__social {
+  font-size: 35px;
+}
+.footer__bottom__social__link i {
+  margin: 30px;
+  transition: 200ms;
+}
+.footer__bottom__social__link i:hover {
+  color: #61ce4e;
+}
+.footer__bottom__address {
+  font-size: 15px;
 }
