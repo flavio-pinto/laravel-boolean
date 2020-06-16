@@ -144,3 +144,37 @@ a {
   font-size: 19px;
   font-weight: 300;
 }
+
+.footer {
+  background: #1b3c59;
+  color: #ffffff;
+  padding: 70px 0 30px;
+}
+.footer .wrapper {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.footer__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #ffffff;
+}
+.footer__nav__brand {
+  font-size: 15px;
+}
+.footer__nav__brand__link__logo {
+  width: 200px;
+}
+.footer__nav__brand__info__item {
+  margin-bottom: 5px;
+}
+.footer__nav__list {
+  font-size: 20px;
+}
+.footer__nav__list__item {
+  margin-bottom: 5px;
+}

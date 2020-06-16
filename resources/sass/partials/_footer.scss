@@ -1,0 +1,36 @@
+.footer {
+    background: $blue;
+    color: $white;
+    padding: 70px 0 30px;
+    & .wrapper {
+        @include container();
+    }
+}
+
+.footer__nav {
+    @include flexbox($align-items: flex-end);
+    padding-bottom: 16px;
+    border-bottom: 1px solid $white;
+    &__brand {
+        font-size: 15px;
+        &__link {
+            &__logo {
+                width: 200px;
+            }
+        }
+        &__info {
+            &__item {
+                margin-bottom: 5px;
+            }
+        }
+    }
+    &__list {
+        font-size: 20px;
+        &__item {
+            margin-bottom: 5px;
+        }
+    }
+}
+
+
+
