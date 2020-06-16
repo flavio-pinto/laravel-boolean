@@ -34,4 +34,32 @@
             </div>
         </div>
     </section>
+
+    <section class="partners">
+        <div class="wrapper">
+            <h4 class="partners__title">I nostri studenti sono stati assunti da:</h4>
+            <div class="partners__top">
+                <div class="partners__top__logo">
+                    <img src="{{asset('img/facileit.png')}}" alt="facile">
+                </div>
+                <div class="partners__top__logo">
+                    <img src="{{asset('img/oneday.png')}}" alt="oneday">
+                </div>
+                <div class="partners__top__logo">
+                    <img src="{{asset('img/prima.png')}}" alt="prima">
+                </div>
+            </div>
+            <div class="partners__bottom">
+                <div class="partners__bottom__logo">
+                    <img src="{{asset('img/fabbrica-digitale-big.png')}}" alt="facile punto it">
+                </div>
+                <div class="partners__bottom__logo">
+                    <img src="{{asset('img/nephila.png')}}" alt="facile punto it">
+                </div>
+                <div class="partners__bottom__logo">
+                    <img src="{{asset('img/rds.png')}}" alt="facile punto it">
+                </div>
+            </div>
+        </div>
+    </section>
 @endsection
